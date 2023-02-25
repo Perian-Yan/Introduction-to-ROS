@@ -1,4 +1,0 @@
-queue_size:
-  10
-topic:
-  "/scan"
