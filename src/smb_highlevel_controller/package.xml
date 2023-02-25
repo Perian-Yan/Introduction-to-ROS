@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>smb_highlevel_controller</name>
+  <version>0.1.0</version>
+  <description>The smb_highlevel_controller package</description>
+  <maintainer email="mspieler@ethz.ch">ros</maintainer>
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>roscpp</depend>
+  <depend>sensor_msgs</depend>
+  <exec_depend>smb_gazebo</exec_depend>
+</package>
