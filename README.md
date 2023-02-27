@@ -1,2 +1,2 @@
 # Introduction-to-ROS
-Courses from ETH Zurich, FS2023
+Course from ETH Zurich, FS2023
