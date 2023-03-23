@@ -21,7 +21,7 @@
   sudo apt install ros-noetic-twist-mux
   sudo apt install ros-noetic-robot-localization
   ```
-  More details please see [Exercise 1 Troubleshooting](https://github.com/Perian-Yan/Introduction-to-ROS/blob/274323fdd8e7d93eb660f9dd99ef3a9acddfd8c8/Exercise%201/Exercise-1-v2.pdf)
+  For more details please see [Exercise 1 Troubleshooting](https://github.com/Perian-Yan/Introduction-to-ROS/blob/274323fdd8e7d93eb660f9dd99ef3a9acddfd8c8/Exercise%201/Exercise-1-v2.pdf)
   
 - Send velocity command to topic `/cmd_vel`
   ```
