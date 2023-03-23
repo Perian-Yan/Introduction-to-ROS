@@ -1,5 +1,5 @@
 # Introduction-to-ROS
-### Overview
+## Overview
 
 These are the exercises from the course [Programming for Robotics - ROS](https://rsl.ethz.ch/education-students/lectures/ros.html) at ETH Zurich, FS2023
 
