@@ -14,6 +14,6 @@ This course provides an introduction to Robot Operating System (ROS) including:
 
 I learned how to create software including simulation, to interface sensors and actuators, and to integrate control algorithms.
 
-### Contents
+## Materials
 
-  [Exercise 1](https://github.com/Perian-Yan/Introduction-to-ROS/blob/b58e3a9d08bf1a94fea513aa8b2432ea21d77b30/Exercise%201/Exercise%201.md)
+Lecture slides, exercise instructions, and recordings can be found on the course webstie [Programming for Robotics - ROS](https://rsl.ethz.ch/education-students/lectures/ros.html) and [RSL Youtube Channel](https://www.youtube.com/@leggedrobotics/search?query=Lecture%20ROS).
