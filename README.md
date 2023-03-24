@@ -17,3 +17,9 @@ I learned how to create software including simulation, to interface sensors and 
 ## Materials
 
 Lecture slides, exercise instructions, and recordings can be found on the course webstie [Programming for Robotics - ROS](https://rsl.ethz.ch/education-students/lectures/ros.html) and [RSL YouTube Channel](https://www.youtube.com/@leggedrobotics/search?query=Lecture%20ROS).
+
+## Setup
+
+Virtual Box 7.0
+
+Ubuntu 20.04
