@@ -2,7 +2,7 @@
 
 ## Overview
 
-In this exercise I learned ROS basics, including `rosnode` and `rostopic` commands, using `rqt_graph` to visualize communication between nodes, and creating lauch files.
+In this exercise I learned ROS basics, including `rosnode` and `rostopic` commands, using `rqt_graph` to visualize communication between nodes, and creating launch files.
 
 ## Demonstration
 
