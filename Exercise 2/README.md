@@ -2,6 +2,12 @@
 
 ## Demonstration
 
+
+
+https://user-images.githubusercontent.com/100858995/227605784-b2a0e079-3a46-4193-a202-1f2b39438f2e.mp4
+
+
+
 ## Instructions
 - Setup: download and unzip package `smb_highlevel_controller` to the `~/Workspaces/smb_ws/src` directory
 - Create a subscriber to the `/scan` topic
