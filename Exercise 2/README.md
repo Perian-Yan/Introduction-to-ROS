@@ -1,5 +1,9 @@
 # Exercise 2
 
+## Overview
+
+In this exercise, I learned how to create a package and set dependencies in CMakeLists and package.xml files, to read parameters from config.yaml file, and to subsribe a topic and use callback method dealing with messages. I also learned using RViz and Gazebo simulator.
+
 ## Demonstration
 
 
