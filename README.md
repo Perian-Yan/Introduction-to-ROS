@@ -23,3 +23,5 @@ Lecture slides, exercise instructions, and recordings can be found on the course
 [VirtualBox 7.0.6](https://www.virtualbox.org/wiki/Downloads)
 
 Ubuntu 20.04
+
+For more details please see [Course Preparation](https://github.com/Perian-Yan/Introduction-to-ROS/blob/2ffd17f4d5e6968d5fd1d782641a3246af24dadc/CoursePreparation_virtual_box.pdf).
