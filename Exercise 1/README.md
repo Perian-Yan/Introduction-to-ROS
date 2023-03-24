@@ -65,14 +65,14 @@ such that
   - launch the node teleop_twist_keyboard
 
 ## Useful shortcuts
-`Ctrl+Shift+O`  Split a new terminal horizontally
+`Ctrl + Shift + O`  Split a new terminal horizontally
 
-`Ctrl+Shift+E`  Split a new terminal vertically
+`Ctrl + Shift + E`  Split a new terminal vertically
 
-`Ctrl+Shift+W`  Close the current terminal
+`Ctrl + Shift + W`  Close the current terminal
 
 `Alt + arrow keys`  Navigate through terminals
 
-`Ctrl+U`  Erase the whole line preceding to the cursor position
+`Ctrl + U`  Erase the whole line preceding to the cursor position
 
-`Ctrl+U`  Erase the single world preceding to the cursor position
+`Ctrl + K`  Erase the single world preceding to the cursor position
