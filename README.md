@@ -20,6 +20,6 @@ Lecture slides, exercise instructions, and recordings can be found on the course
 
 ## Setup
 
-Virtual Box 7.0
+[VirtualBox 7.0.6](https://www.virtualbox.org/wiki/Downloads)
 
 Ubuntu 20.04
