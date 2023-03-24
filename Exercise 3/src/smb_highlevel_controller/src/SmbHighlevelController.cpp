@@ -86,7 +86,7 @@ void SmbHighlevelController::ScanCallback(const sensor_msgs::LaserScan &msg)
   if(x < 5)
     ctrl.linear.x = 0.5;
   ROS_INFO_STREAM("The distance is " << x << 
-                    ". The angular is " << theta << ".");
+                    ". The angle is " << theta << ".");
   publisher_twist.publish(ctrl);
 
   visualization_msgs::Marker marker;
@@ -127,7 +127,7 @@ void SmbHighlevelController::ScanCallback(const sensor_msgs::LaserScan &msg)
   float angle_car = atan2(y_car, x_car);
   
   visualization_msgs::Marker marker2;
-    marker2.header.frame_id = "odom";
+    marker2.header.frame_id = "odom";        // set odom frame
     marker2.header.stamp = ros::Time();
     marker2.ns = "ns";
     marker2.id = 1;  // choose a different id in order to visualize two markers
@@ -135,7 +135,7 @@ void SmbHighlevelController::ScanCallback(const sensor_msgs::LaserScan &msg)
     marker2.action = visualization_msgs::Marker::ADD;
     marker2.pose.position.x = x_car + x*cos(angle_car + theta);
     marker2.pose.position.y = y_car + x*sin(angle_car + theta);
-    marker2.pose.position.z = z_car;         // x,y,and z are in the rslidar frame
+    marker2.pose.position.z = z_car;         // x,y,and z are in the odom frame
     marker2.pose.orientation.x = 0.0;
     marker2.pose.orientation.y = 0.0;
     marker2.pose.orientation.z = 0.0;
