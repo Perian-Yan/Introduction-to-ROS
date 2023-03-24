@@ -32,7 +32,7 @@ https://user-images.githubusercontent.com/100858995/227394141-65cf1b4b-f9a4-481d
   For more details please see [Exercise 1 Troubleshooting](https://github.com/Perian-Yan/Introduction-to-ROS/blob/274323fdd8e7d93eb660f9dd99ef3a9acddfd8c8/Exercise%201/Exercise-1-v2.pdf)
   
 - Send velocity command to topic `/cmd_vel`
-  ```
+  ```shell
   # in a new terminal
   # use tab for auto-completion
   rostopic pub /cmd_vel geometry_msgs/Twist "linear:
