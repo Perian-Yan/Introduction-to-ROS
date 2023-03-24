@@ -1,5 +1,7 @@
 # Exercise 1
+## Demonstration
 
+## Instructions
 - Setup SMB simulation
   - Download "smb_common.zip"
   - Unzip and place it in "~/Workspaces/smb_ws/src"
