@@ -83,8 +83,8 @@ void SmbHighlevelController::ScanCallback(const sensor_msgs::LaserScan &msg)
   geometry_msgs::Twist ctrl;
   ctrl.angular.z = theta * kp_theta;
   ctrl.linear.x = x * kp_x; //0.5
-  if(x < 5)
-    ctrl.linear.x = 0.5;
+  if(x < 15)
+    ctrl.linear.x = 20;
   ROS_INFO_STREAM("The distance is " << x << 
                     ". The angle is " << theta << ".");
   publisher_twist.publish(ctrl);
