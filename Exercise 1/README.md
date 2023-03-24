@@ -1,6 +1,12 @@
 # Exercise 1
 ## Demonstration
 
+
+
+https://user-images.githubusercontent.com/100858995/227394141-65cf1b4b-f9a4-481d-80ff-1450d1178304.mp4
+
+
+
 ## Instructions
 - Setup SMB simulation
   - Download "smb_common.zip"
