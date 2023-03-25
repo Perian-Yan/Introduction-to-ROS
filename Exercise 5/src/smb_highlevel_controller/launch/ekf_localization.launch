@@ -1,0 +1,46 @@
+<launch>
+    <node pkg="robot_localization" 
+          type="ekf_localization_node" name="ekf_localization">
+    <rosparam command="load" file="$(find smb_control)/config/localization.yaml"/>
+    </node>
+
+<param name="use_sim_time" value="true"/>
+
+<node name = "rviz"  pkg = "rviz"  type = "rviz"  
+      args="-d $(find smb_highlevel_controller)/rviz/exercise4.rviz"/>
+
+<node pkg="rqt_multiplot" 
+      type="rqt_multiplot"  name="rqt_multiplot"
+      args="--multiplot-run-all --multiplot-config $(find smb_highlevel_controller)/plot/smb_xy.xml"/>
+
+<!-- smb top view frame-->
+<node pkg="tf" type="static_transform_publisher" name="smb_top_view"
+      args="0 0 2 0 0 0 1 base_link smb_top_view 100" />
+
+<!-- play the bag  use -l for loop paly-->
+<node pkg="rosbag" type="play" name="player" output="screen"
+      args="--clock -r 0.5 /home/ros/Workspaces/smb_ws/smb_navigation.bag"/>
+
+<arg name="simulation" 			    default="true"/>
+<arg name="robot_namespace" 		default=""/>
+<arg name="enable_ekf" 			    default="true"/>
+<arg name="robot_description"  	default="robot_description"/>
+<arg name="description_file"    default="$(find smb_description)/urdf/smb_standalone.urdf.xacro"/>
+        
+<!-- Load robot description -->
+<!-- Load robot description for gazebo -->
+<include file="$(find smb_description)/launch/load.launch">
+    <arg name="simulation"       value="$(arg simulation)"/>
+    <arg name="description_name" value="$(arg robot_description)"/>
+    <arg name="description_file" value="$(arg description_file)"/>
+    <arg name="wheel_joint_type" value="continuous"/>
+    <arg name="robot_namespace"  value="$(arg robot_namespace)"/>
+</include>
+
+<node name="smb_robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" output="screen">
+    <param name="publish_frequency" value="50"/>
+    <param name="use_tf_static"     value="true"/>
+    <remap from="robot_description" to="$(arg robot_description)"/>
+</node>
+
+</launch>

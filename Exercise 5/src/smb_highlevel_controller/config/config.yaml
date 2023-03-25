@@ -1,0 +1,11 @@
+queue_size:
+  10
+topic:
+  "/scan"
+controller_gain:
+  linear:
+    0.025
+  angular:
+    1.0
+service_name:
+  "/stop_smb"
