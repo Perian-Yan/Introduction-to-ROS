@@ -104,7 +104,7 @@ void SmbHighlevelController::ScanCallback(const sensor_msgs::LaserScan &msg)
   // ---------------------------------------------------------------------
   
   geometry_msgs::Twist ctrl;
-  if (x > 100){
+  if (x > 100){       // if x is inf
     x = 0;
   }
 
