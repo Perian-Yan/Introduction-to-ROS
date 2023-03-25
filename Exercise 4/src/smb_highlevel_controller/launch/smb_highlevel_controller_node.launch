@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+
+    <node name = "smb_highlevel_controller"  
+          pkg = "smb_highlevel_controller"  
+          type = "smb_highlevel_controller"
+          output = "screen">
+          
+        <rosparam command = "load"
+            file = "$(find smb_highlevel_controller)/config/config.yaml"/>
+    </node>
+
+    <include file = "$(find smb_gazebo)/launch/smb_gazebo.launch">
+
+        <!--Loaded singlePiller.world for exercise 3-->
+        <arg name = "world_file"  
+             value = "$(find smb_highlevel_controller)/worlds/singlePillar.world"/>
+        <arg name = "laser_enabled"  
+             value = "true"/>    
+        <arg name = "laser_scan_min_height"
+             value = "-0.2"/>
+        <arg name = "laser_scan_max_height"
+             value = "1.0"/>    
+    </include>
+
+    <node name = "rviz"  pkg = "rviz"  type = "rviz"  
+          args="-d $(find smb_highlevel_controller)/rviz/exercise3.rviz"/>
+     
+     <!-- For exercise 4: running simulated smb-->     
+     <node pkg="rqt_multiplot" 
+          type="rqt_multiplot"  name="rqt_multiplot"
+          args="--multiplot-run-all --multiplot-config $(find smb_highlevel_controller)/plot/smb_xy.xml"/>
+    <!--Remove keyboard part from exercise 3-->
+    <?ignore
+    <node name = "keyboard"  pkg = "teleop_twist_keyboard"  
+          type = "teleop_twist_keyboard.py"  output = "screen"
+          launch-prefix="gnome-terminal --command"/> 
+    ?>
+   
+</launch>
+
+
+          
+        
