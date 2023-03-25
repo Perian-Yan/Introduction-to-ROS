@@ -54,7 +54,7 @@
   ![recorded_smb_xy](https://user-images.githubusercontent.com/100858995/227726913-b6e90f17-ca4a-4751-b8b7-d8f336673003.png)
 
   
-- Add a new launch file (refer to the [control.launch](https://github.com/Perian-Yan/Introduction-to-ROS/blob/d4945f333096095403d05b5cfd78ea1bdb59de9d/Exercise%204/src/smb_common/smb_control/launch/control.launch)):
+- In the newly-created launch file (refer to the [control.launch](https://github.com/Perian-Yan/Introduction-to-ROS/blob/d4945f333096095403d05b5cfd78ea1bdb59de9d/Exercise%204/src/smb_common/smb_control/launch/control.launch)):
   - Add a [`robot_state_publisher` node]([http://wiki.ros.org/robot_state_publisher/Tutorials/Using%20the%20robot%20state%20publisher%20on%20your%20own%20robot](https://github.com/Perian-Yan/Introduction-to-ROS/blob/d4945f333096095403d05b5cfd78ea1bdb59de9d/Exercise%204/src/smb_highlevel_controller/launch/ekf_localization.launch#L40-L44)). See the reference [here](http://wiki.ros.org/robot_state_publisher/Tutorials/Using%20the%20robot%20state%20publisher%20on%20your%20own%20robot)
   - Add a frame named [`smb_top_view`](https://github.com/Perian-Yan/Introduction-to-ROS/blob/d4945f333096095403d05b5cfd78ea1bdb59de9d/Exercise%204/src/smb_highlevel_controller/launch/ekf_localization.launch#L16-L18). See [here, section 6.3](http://wiki.ros.org/tf)
   - [`/use_sim_time`](https://github.com/Perian-Yan/Introduction-to-ROS/blob/d4945f333096095403d05b5cfd78ea1bdb59de9d/Exercise%204/src/smb_highlevel_controller/launch/ekf_localization.launch#L7) can be set true in launch file
