@@ -2,7 +2,7 @@
 
 ## Overview
 
-The goal of this exercise is creating a service server and a client that can stop the robot based on distance from the pillar or the IMU data.
+In this exercise, I learned how to create a service server and a client that can stop the robot based on distance from the pillar or the IMU data.
 
 ## Demonstration
 
@@ -18,7 +18,7 @@ https://user-images.githubusercontent.com/100858995/227747530-21f4fbf1-e947-467c
 
 - Implement a service server that can stop and start the server
   - Use the [`std_srvs/SetBool`](http://docs.ros.org/en/noetic/api/std_srvs/html/srv/SetBool.html) service type
-  - Load the service name from the parameter server
+  - Load the service name from the [parameter server](https://github.com/Perian-Yan/Introduction-to-ROS/blob/e047ccad2cbb9be144bdc77a2faa9f91e4026266/Exercise%205/src/smb_highlevel_controller/config/config.yaml#L10-L11)
   - Create the [callback method](https://github.com/Perian-Yan/Introduction-to-ROS/blob/40d734d955247446eb8a5961203f41ca82c5e914/Exercise%205/src/smb_highlevel_controller/src/SmbHighlevelController.cpp#L53-L64)
   - Launch the node and call the service
   
