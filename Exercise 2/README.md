@@ -58,6 +58,6 @@ after launching
   - Pass the argument `laser_enabled` with the value `True`
   - Add RViz
   
-- OPTIONAL
+- OPTIONAL :clap:
   - The [`pointcloud_to_laserscan` node](http://wiki.ros.org/pointcloud_to_laserscan) converts 3D point cloud into 2D laser scan
   - Create an additional subscriber to the topic `/rslidar_points` and print the number of points. See message type [PointCloud2](http://docs.ros.org/en/melodic/api/sensor_msgs/html/msg/PointCloud2.html).
