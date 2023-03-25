@@ -135,7 +135,7 @@ void SmbHighlevelController::ScanCallback(const sensor_msgs::LaserScan &msg)
     marker2.action = visualization_msgs::Marker::ADD;
     marker2.pose.position.x = x_car + x*cos(angle_car + theta);
     marker2.pose.position.y = y_car + x*sin(angle_car + theta);
-    marker2.pose.position.z = z_car;         // x,y,and z are in the rslidar frame
+    marker2.pose.position.z = z_car;         // x,y,and z are in the odom frame
     marker2.pose.orientation.x = 0.0;
     marker2.pose.orientation.y = 0.0;
     marker2.pose.orientation.z = 0.0;
